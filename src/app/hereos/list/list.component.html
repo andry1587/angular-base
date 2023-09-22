@@ -6,6 +6,8 @@
 
 <button *ngIf="listHero.length > 0" class="btn btn-outline-danger" (click)="deleteHero()">Borrar Ultimo H.</button>
 
+<button *ngIf="listHero.length < 3" class="btn btn-primary" (click)="resetHerosOrigin()">Reset Hero</button>
+
 <div>
     <h3 *ngIf="valuedelete else NoSeBorraNada">Muesta borrado: <small class="text-danger">{{valuedelete}}</small></h3>
 </div>
