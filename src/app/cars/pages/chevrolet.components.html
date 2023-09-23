@@ -1,0 +1,14 @@
+<h1>Chevrolet</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-list-cars [charactersList]="gettersCars"
+                        (onDeletedCar)="onDeleteCarsById($event)">
+    </app-list-cars>        
+    </div>
+
+    <div class="col">
+        <app-add-models-cars (onNewCarsEmit)="onNewCarsAdd($event)"></app-add-models-cars>
+    </div>
+</div>  
